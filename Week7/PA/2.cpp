@@ -18,7 +18,7 @@ int main() {
         if (str.substr(dotPos + 1)[5] >= '5') {
             afterDot[4] += 1;
         }
-        cout << "." << afterDot << endl;;
+        cout << "." << afterDot << endl;
     }
     double d;
     d = stod(str);
