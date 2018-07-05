@@ -1,26 +1,20 @@
-#include <iostream>
 #include <algorithm>
-#include <vector>
+#include <iostream>
 #include <iterator>
-#include <numeric>
 #include <list>
+#include <numeric>
+#include <vector>
 
 using namespace std;
 
 class CLessThan9 {
-public:
-    bool operator()(int n) {
-        return n < 9;
-    }
+  public:
+    bool operator()(int n) { return n < 9; }
 };
 
-void outputSquare(int n) {
-    cout << n * n << " ";
-}
+void outputSquare(int n) { cout << n * n << " "; }
 
-int calculateCube(int n) {
-    return n * n * n;
-}
+int calculateCube(int n) { return n * n * n; }
 
 int main() {
     const int SIZE = 10;
@@ -40,12 +34,12 @@ int main() {
     cout << count_if(v.begin(), v.end(), CLessThan9());
 
     cout << endl << "4)";
-    cout << * min_element(v.begin(), v.end());
+    cout << *min_element(v.begin(), v.end());
     cout << endl << "5)";
-    cout << * max_element(v.begin(), v.end());
+    cout << *max_element(v.begin(), v.end());
     cout << endl << "6)";
     cout << accumulate(v.begin(), v.end(), 0);
-    
+
     cout << endl << "7)";
     for_each(v.begin(), v.end(), outputSquare);
 

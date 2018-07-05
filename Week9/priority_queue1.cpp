@@ -7,7 +7,7 @@ int main() {
     q.push(1.1);
     q.push(2.1);
     q.push(9.8);
-    while(!q.empty()) {
+    while (!q.empty()) {
         cout << q.top() << ",";
         q.pop();
     }
